@@ -17,6 +17,8 @@ public class EjerciciosBasicos22 {
 		System.out.print("Introduce tu edad guap@");
 		edad = lectura.nextInt();
 		
+		//Mostramos el resultado en pantalla
+		
 		System.out.println(edad>=18);
 
 	}
