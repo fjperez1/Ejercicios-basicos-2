@@ -23,15 +23,15 @@ public class EjerciciosBasicos25 {
 		System.out.println("Introduce las notas del tercer trimestre");
 		nter = lectura.nextDouble();
 		
-		//
+		//Realizamos la media aritmética de las 3 notas
 		
 		media = (nprim + nseg + nter)/3;
 		
+		//Mostramos los resultados al usuario
+		
 		System.out.println("La nota media en boletín es " + (int)media);
 	    System.out.format("La nota media en expediente es %.2f", media);
-
-
-		
+	
 	}
 
 }
