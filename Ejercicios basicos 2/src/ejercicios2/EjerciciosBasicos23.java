@@ -10,6 +10,7 @@ public class EjerciciosBasicos23 {
 			//Declaramos las variables que vamos a utilizar
 		
 			int numero;
+			String res;
 			Scanner lectura = new Scanner(System.in);
 			
 			//Solicitamos un numero al usuario
@@ -17,9 +18,11 @@ public class EjerciciosBasicos23 {
 			System.out.println("Introduce un número para saber si es par o no");
 			numero = lectura.nextInt();
 			
+			res = (numero%2)==0 ? "es par" : "es impar";
+			
 			//Mostramos el resultado en pantalla
 			
-			System.out.println((numero%2)==0);
+			System.out.println("El numero que has introducido " + res);
 	}
 
 }

@@ -22,7 +22,7 @@ public class EjerciciosBasicos24 {
 		biblio = lectura.nextBoolean();
 		
 				
-		System.out.println((llueve==false && tareas==true) || biblio==true);
+		System.out.println(((!llueve && tareas) || biblio) ? "Si puedes salir":"No puedes salir");
 
 	}
 

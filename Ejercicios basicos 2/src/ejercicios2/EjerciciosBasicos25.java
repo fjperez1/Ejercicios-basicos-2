@@ -8,30 +8,30 @@ public class EjerciciosBasicos25 {
 		// TODO Auto-generated method stub
 
 		//Declaramos las variables que vamos a utilizar
-		double nprim = 0.0;
-		double nseg = 0.0;
-		double nter = 0.0;
-		double media = 0.0;
-		Scanner lectura = new Scanner(System.in);
-		
-		//Solicitamos al usuario que introduzca las notas
-		
-		System.out.println("Introduce las notas del primer trimestre");
-		nprim = lectura.nextDouble();
-		System.out.println("Introduce las notas del segundo trimestre");
-		nseg = lectura.nextDouble();
-		System.out.println("Introduce las notas del tercer trimestre");
-		nter = lectura.nextDouble();
-		
-		//Realizamos la media aritmética de las 3 notas
-		
-		media = (nprim + nseg + nter)/3;
-		
-		//Mostramos los resultados al usuario
-		
-		System.out.println("La nota media en boletín es " + (int)media);
-	    System.out.format("La nota media en expediente es %.2f", media);
-	
+
+		int notasPrimerT, notasSegundoT, notasTercerT;
+		double notaMedia;
+		Scanner sc = new Scanner (System.in);
+
+		//Solicitamos al usuario que nos indique la nota media de los distintos trimestres
+
+		System.out.println ("Introduce las notas del primer trimestre");
+		notasPrimerT = sc.nextInt();
+		System.out.println ("Introduce las notas del segundo trimestre");
+		notasSegundoT = sc.nextInt();
+		System.out.println ("Introduce las notas del tercer trimestre");
+		notasTercerT = sc.nextInt();
+
+		//Realizamos los calculos necesarios y mostramos el resultado al usuario
+
+		notaMedia = (double)(notasPrimerT+notasSegundoT+notasTercerT)/3;
+		System.out.println ("La nota del boletin es " + (int)notaMedia);
+
+		//Realizamos los calculos necesarios para mostrar la nota de expediente al usuario
+
+		System.out.println ("La nota del expediente es " + notaMedia);
+		sc.close();
 	}
 
 }
+
